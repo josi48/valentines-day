@@ -1,7 +1,7 @@
 /* =========================
    Customize these
 ========================= */
-const HER_NAME = "ቃልኪዳን!"; // e.g. "Sara"
+const HER_NAME = "ቃል"; // e.g. "Sara"
 const YOUR_NAME = "እዮሲያስ";
 const QUESTION = "will you be my valentine?";
 
