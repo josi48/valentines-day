@@ -1,7 +1,7 @@
 /* =========================
    Customize these
 ========================= */
-const HER_NAME = "ቃልኪዳን!"; // e.g. "Sara"
+const HER_NAME = "ቃል"; // e.g. "Sara"
 const YOUR_NAME = "እዮሲያስ";
 const QUESTION = "will you be my valentine?";
 
@@ -136,7 +136,11 @@ function overlaps(a, b) {
 }
 
 /* move NO anywhere inside safe bounds; avoid YES; clamp after paint */
+<<<<<<< HEAD
 const SAFE_MARGIN = 220; // how far from screen edges (increase if you want)
+=======
+const SAFE_MARGIN = 180; // how far from screen edges (increase if you want)
+>>>>>>> c6ab7d5a3002c5d10bcc0543232e0ca8db6cdc3e
 
 function moveNoAnywhereSafe() {
   const btnW = noBtn.offsetWidth;
