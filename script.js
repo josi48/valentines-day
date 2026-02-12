@@ -137,7 +137,7 @@ function overlaps(a, b) {
 
 /* move NO anywhere inside safe bounds; avoid YES; clamp after paint */
 
-const SAFE_MARGIN = 220; // how far from screen edges (increase if you want)
+const SAFE_MARGIN = 320; // how far from screen edges (increase if you want)
 
 
 function moveNoAnywhereSafe() {
