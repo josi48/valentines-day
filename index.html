@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Valentine?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background layers -->
+  <div class="bg bg-before" aria-hidden="true"></div>
+  <div class="bg bg-after" aria-hidden="true"></div>
+
+  <!-- Floating hearts layer -->
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+
+  <canvas id="confetti"></canvas>
+
+  <main class="layout">
+    <section class="hero">
+      <div class="badge">💘 Valentine Mode</div>
+
+      <h1 id="question">
+        <span class="glowName" id="nameGlow">YOUR GIRLFRIEND</span>, will you be my valentine?
+      </h1>
+
+      <p class="sub" id="subtext">Don’t overthink it 😌</p>
+
+      <div class="ctaRow">
+        <button id="yesBtn" class="btn yes">Yes</button>
+        <button id="noBtn" class="btn no" type="button">No</button>
+      </div>
+
+      <p class="hint" id="hint">Tip: try hovering “No” 😏</p>
+      <div class="footerLine" id="signature">— made with love 💌</div>
+    </section>
+
+    <section class="modal hidden" id="yayModal" role="dialog" aria-modal="true">
+      <div class="modalCard">
+        <div class="modalHeader">
+          <div class="spark">✨</div>
+          <h2>እልልልልልልል 🎉</h2>
+        </div>
+
+        <p class="sub">እወድሻለው! see you soon baby 💗</p>
+
+        <img
+        class="meme popPic"
+        src="ourPic.jpg"
+        alt="us"
+        />
+
+        <div class="modalBtns">
+          <button id="replayBtn" class="btn ghost">Replay</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
