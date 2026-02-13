@@ -1,24 +1,20 @@
-/* =========================
-   Customize these
-========================= */
-const HER_NAME = "ቃል"; // e.g. "Sara"
-const YOUR_NAME = "እዮሲያስ";
-const QUESTION = "will you be my valentine?";
 
-/* Messages stay the same */
+const HER_NAME = "ቃልኪዳን";
+const YOUR_NAME = "እዮሲያስ";
+const QUESTION = "will you be my valentine የኔ ፍቅር?";
+
+
 const NO_SNARK = [
   "No? ተይ እንዳይቆጭሽ",
   "Bae stop playing 😌",
   "Are you sure ? 👀",
-  "You meant YES 😭💗",
+  "You meant YES 💗",
   "አንቺ I’m not accepting that answer 😤",
   "faen! ",
-  "Last chance… 😏"
+  "Last chance ዋ የስ በይ!!!… 😏"
 ];
 
-/* =========================
-   DOM
-========================= */
+
 const questionEl = document.getElementById("question");
 const nameGlowEl = document.getElementById("nameGlow");
 const subtextEl  = document.getElementById("subtext");
@@ -38,7 +34,7 @@ const heartsLayer = document.getElementById("hearts");
 ========================= */
 nameGlowEl.textContent = HER_NAME;
 questionEl.innerHTML = `<span class="glowName" id="nameGlow">${HER_NAME}</span>, ${QUESTION}`;
-signatureEl.textContent = `— made with love by ${YOUR_NAME} 💌`;
+signatureEl.textContent = `— made by ${YOUR_NAME} 💌`;
 
 /* =========================
    Floating hearts generator
@@ -91,7 +87,7 @@ function clamp(v, min, max) {
 function punishNoAttempt() {
   noCount++;
   subtextEl.textContent = NO_SNARK[Math.min(noCount, NO_SNARK.length - 1)];
-  if (noCount >= 2) hintEl.textContent = "Yeah… it’s not happening 😭";
+  if (noCount >= 2) hintEl.textContent = "Yeah… it’s not happening Noooo";
 }
 
 function enableFreeModeIfNeeded() {
